@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<script>
+'use strict'
+const date = new Date();
+
+let timeId = null;
+
+function printTime(){
+    const date = new Date();
+    const hh = date.getHours();
+    const mm = date.getMinutes();
+    const ss = date.getSeconds();
+
+    document.getElementById("result").innerHTML = hh + " : " + mm + " : " + ss;
+}
+
+
+function startClock() {
+    timeId = setInterval(printTime,1000);
+    si = null;
+}
+
+
+function stopClock(){
+    clearInterval(timeId);
+    clearInterval(si);
+}
+
+const si = setInterval(printTime,0);
+</script>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="topmenu"><a href="./login.html">로그인 </a> | <a href="./join.html"> 회원가입</a></div>
+        </div>
+        <div id="result"></div>
+        <p id="clbtn">
+            <button type="button" onclick="startClock()">Start</button>
+            <button type="button" onclick="stopClock()">Stop</button>
+        </p>
+        <div id="content">
+            <a href="./index.html"><img src="img/home/back.gif" alt="" id="img1" class="photo"></img></a>
+            <a href="./index.html"><img src="img/home/bghm.png" alt="" id="img2" class="photo"></img></a>
+            <a href="./index.html"><img src="img/home/3.jpg" alt="" id="img3" class="photo"></img></a>
+        </div>
+        <div id="menutitle">Menu</div>
+        <div id="navp">
+            <a href="./resume.html"><div id="resume" class="menup"><img src="./img/home/resume.png" alt=""></div></a>
+            <a href="./news.html"><div id="news" class="menup"><img src="./img/home/news.png" alt=""></div></a>
+            <a href="./favorites.html"><div id="favorite" class="menup"><img src="./img/home/favorites.png" alt=""></div></a>
+            <a href="./detail.html"><div id="detail" class="menup"><img src="./img/home/page.png" alt=""></div></a>
+            <a href="./media.html"><div id="media" class="menup"><img src="./img/home/media.png" alt=""></div></a>
+            <a href="./tour.html"><div id="tour" class="menup"><img src="./img/home/tour.png" alt=""></div></a>
+            <a href="./clonecod.html"><div id="clone" class="menup"><img src="./img/images/Carrot.png" alt=""></div></a>
+            <a href="./number.html"><div id="number" class="menup"><img src="./img/images/idcard.png" alt=""></div></a>
+        </div>
+        <div id="nav">
+            <a href="./resume.html"><div id="resume" class="menu">이력서</div></a>
+            <a href="./news.html"><div id="news" class="menu">뉴스</div></a>
+            <a href="./favorites.html"><div id="favorite" class="menu">즐겨<br>찾기</div></a>
+            <a href="./detail.html"><div id="detail" class="menu">상세<br>페이지</div></a>
+            <a href="./media.html"><div id="media" class="menu">미디어<br>쿼리</div></a>
+            <a href="./tour.html"><div id="tour" class="menu">투어리스트<br>인투어</div></a>
+            <a href="./clonecod.html"><div id="clone" class="menu">클론<br>코딩</div></a>
+            <a href="./number.html"><div id="clone" class="menu">주민번호<br>유효성</div></a>
+        </div>
+        <div><audio src="./배경음악.mp3" autoplay loop=infinite></audio></div>
+        <footer>
+            <p>Copyright © 2021 by yoo._.0924</p>
+        </footer>
+    </div>
+</body>
+</html>
