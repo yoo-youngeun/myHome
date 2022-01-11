@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {font-family: 'S-CoreDream-3Light'; scroll-behavior: smooth;}
+
+a{text-decoration: none; color:black}
+a:hover img {transform: scale(1.2);}
+a:hover {font-weight: bolder;}
+
+h1 {font-size: 40px;}
+
+#container {
+    width: 100%;
+}
+
+#movemenu{  /*이동메뉴 div 설정*/
+    position: fixed;
+    width: 50px;height: 30px;
+    top: 1%;
+    right: 0;
+    height: 30px;
+}
+
+#movemenu img{
+    position: relative;
+    width: 30px;
+    height: 32px;
+}
+
+
+#icon {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 50%;
+    margin: 20px 0;
+    transform: translate(-50%);
+}
+
+#icon img {
+    margin: 0 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    #container {
+        position: relative;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #icon {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+

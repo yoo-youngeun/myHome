@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li a:hover {
+    font-size: 1.1em;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Cafe24SsurroundAir';
+}
+
+#container {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+}
+
+.nav > ul {
+    height: 50px;
+    list-style: none; /*앞 특수문자*/
+    color: white;
+    
+}
+
+.nav > ul > li {
+    float: left;
+    padding: 10px;
+    margin: 5px 5px;
+}
+
+/*  뷰포트   
+    구형폰 : 320px;
+    현재폰 : 360px ~ 375px;
+*/
+.nav, #contents {
+    width: 310px;
+    margin: 0 auto;
+}
+
+.nav > ul {
+    font-size: 12px;
+}
+
+#intro {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#intro > img {
+    width: 100%;
+    padding: 10px;
+}
+
+#desc {
+    width: 100%;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+#footer {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+#footer > p {
+    text-align: center;
+    line-height: 10px;
+}
+
+/*
+    테블릿 : 768px ~
+*/
+@media screen and (min-width: 768px) {
+    .nav, #contents {
+        width: 750px;
+        margin: 0 auto;
+    }
+    #intro {
+        width: 100%;
+    }
+    #intro > img {
+        width: 20%;
+        padding: 10px;
+    }
+    #desc {
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    #footer {
+        height: 70px;
+        padding: 30px;
+        background-color: gray;
+    }
+}
+
+/*
+    데스크탑 가로 사이즈 : 1024px ~
+*/
+@media screen and (min-width: 1024px) {
+    #container {
+        width: 90%;
+        height: 100vh;
+        margin: auto auto;
+    }
+    
+    .header {   /*헤더div*/
+        width: 20%;
+        height: 100%;
+        float: left;
+        background-color: rgb(102, 102, 107);
+        opacity: 0.7;
+    }
+
+    .nav {  /*nav 크기 설정*/
+        width: 100%;
+        height: 100%;
+        margin-top: 13%;
+        margin-left: 5%;
+    }
+
+    .nav > ul > li {    /*nav li설정*/
+        font-size: 35px;
+        padding: 10%;
+        font-weight: bold;
+        font-family: 'GongGothicLight';
+    }
+
+    #contents {
+        width: 80%;
+        height: 85%;
+        margin: 0 20%;
+        padding: 80px;
+        background-color: rgb(198, 207, 216);
+    }
+
+    #intro {
+        width: 100%;
+        margin: 3% 10%;
+    }
+    #intro > img {
+        width: 20%;
+        padding: 20px;
+    }
+    #desc {
+        width: 100%;
+        margin: 8% auto;
+        padding: 2%;
+    }
+    #desc > p {
+        font-size: 28px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    #footer {
+        width: 80%;
+        height: 15%;
+        padding: 30px;
+        background-color: rgb(243, 234, 226);
+        margin-left: 20%;
+        opacity: 0.7;
+    }
+
+    #footer > p {
+        line-height: 60px;
+        font-size: 22px;
+        color: rgb(155, 148, 148);
+    }
+
+}
+

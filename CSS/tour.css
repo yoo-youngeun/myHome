@@ -1,0 +1,56 @@
+body {padding: 0; margin: 0;}
+
+#container {
+    width: 20%;
+    height: 450px;
+    margin: 150px auto;
+    border: 3px solid rgb(200, 218, 235); 
+    text-align: center;
+    background-color: rgb(217, 240, 201);
+    border-radius: 2em;
+}
+#movemenu{  /*이동메뉴 div 설정*/
+    position: fixed;
+    width: 50px;height: 30px;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header h1 {
+    color: white;
+}
+
+#content {
+    padding: 3px;
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+
+
+ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+a:link {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+a:active {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}

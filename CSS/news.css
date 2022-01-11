@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'S-CoreDream-3Light';
+    scroll-behavior: smooth;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    }
+
+a:link {text-decoration: none; color: black;}
+a:hover {text-decoration: underline; color: skyblue;}
+a:hover img {transform: scale(1.2);}
+a:visited {text-decoration: none; color: black;}
+
+div {
+    position: relative;
+}
+
+#container {
+    width: 90%;
+    height: 100%;
+    margin-left: 3px;
+}
+
+#container hr {
+    position: relative;
+    width: 100%;
+}
+#movemenu{  /*이동메뉴 div 설정*/
+    position: fixed;
+    width: 50px;height: 30px;
+    top: 1%;
+    right: 0;
+}
+
+strong {font-size: 30px;}
+
+li {text-decoration: none;
+    display: inline-block;
+    margin: 3px;
+    font-size: 16px;}
+
+#topmenu {
+    width: 100%;
+    margin: auto auto;
+    text-align: center;
+}
+
+#topmenu a:hover{
+    text-decoration: none;
+}
+
+#mdmenu {
+    display: none;
+}
+
+#bgdiv {
+    display: none;
+}
+
+table {
+    width: 100%;
+    padding: 5px;
+}
+
+th {
+    padding: 10px; 
+}
+
+td {
+    padding: 5px;
+}
+
+#bg:hover{transform: scale(1);}
+#bg2:hover{transform: scale(1);}
+#bgdiv2 {display: none; margin: auto auto;}
+#bg2 {float: right;}
+
+#bottom {
+    margin: auto auto;
+}
+
+
+@media screen and (min-width: 768px) {/*테블릿화면*/
+    #container {
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    hr {
+        width: 80%;
+    }
+    
+    strong {font-size: 40px;}
+    
+    li {font-size: 20px;}
+    
+    #topmenu {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #topmenu a:hover{
+        text-decoration: none;
+    }
+
+    
+    #mdmenu {
+        margin-top: 10px;
+    }
+    
+    #bg:hover{transform: scale(1);}
+    #bg2:hover{transform: scale(1);}
+    
+    #bottom {
+        margin: auto auto;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 1024px) {
+    #container {
+        width: 60%;
+    }
+    strong {font-size: 50px;}
+    
+    li {font-size: 30px;}
+    #mdmenu {
+        display: flex;
+        width: 100%;
+        height: 15px;
+        left: 50%;
+        justify-content: center;
+        transform: translate(-50%);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #mdmenu span#left{margin-right: 300px;}
+    
+    #bgdiv {
+        display: flex;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #bgdiv img {width: 100%;}
+
+    #bgdiv2 {
+        width: 50px;
+        display: flex;
+        float: right;
+        right: 80px;
+        background-color: aqua;
+    }
+/* 
+    #bg2 {
+        position: absolute;
+        right: 0;
+        width: 40%;
+    } */
+
+}
+
+
+
+
+
+
+
+
+
+
+

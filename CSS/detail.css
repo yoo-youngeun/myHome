@@ -1,0 +1,67 @@
+#container {
+    width: 100%;
+}
+
+#movemenu{  /*이동메뉴 div 설정*/
+    position: fixed;
+    width: 100px;height: 30px;
+    top: 1%;
+    right: 0;
+    height: 30px;
+    border: none;
+}
+
+a:hover img {transform: scale(1.2);}
+
+div {
+    width: 450px;
+    height: 442px;
+    margin: auto;
+    border: solid;
+    border-width: 0.05px;
+    border-color: rgba(139, 139, 139, 0.247);
+    text-align: center;
+    font-weight: bolder;
+    line-height: 30px;
+    align-items: center;
+    font-size: 16px;
+}
+
+#container {
+    border: none;
+}
+
+div#detail2{
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 11px;
+    height: 25px;
+    background-color: black;
+    color:white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 4px;
+}
+
+div#detail2 ~ div{
+    height: 140px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.top{
+    font-size: 14px;
+    color: red;
+}
+
+.bottom {
+    font-size: 12px;
+}
+
+p span{
+    color: blue;
+}
+
+#detail5 {
+    margin-bottom: 30px;
+}
