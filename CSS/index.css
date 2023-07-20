@@ -11,7 +11,14 @@ body {
     margin: 0; padding: 0;
 }
 
-#result {
+body > div#container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+body > div#container > div#result {
     position: absolute;
     top: 50px;
     left: 50%;
@@ -39,7 +46,15 @@ div {
     position: relative;
 }
 
-#clbtn {
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 1.05em;
+}
+
+body > div#container > p#clbtn {
     position: relative;
     top: 50px;
     left: 50%;
@@ -47,7 +62,7 @@ div {
     width: 150px;
 }
 
-#clbtn button {
+body > div#container > p#clbtn button {
     background-color: rgb(205, 220, 233);
     width: 50px;
     height: 20px;
@@ -56,12 +71,9 @@ div {
     margin: 3px 10px;
     color:rgb(142, 154, 167);
 }
-a {
-    color: black;
-    text-decoration: none;
-}
 
-#header {
+
+body > div#container > div#header {
     margin: 0 auto;
     width: 60%;
     height: 30px;
@@ -69,20 +81,16 @@ a {
     margin-top: 10px;
 }
 
-#topmenu {
+body > div#container > div#header > div#topmenu {
     float: right;
     width: 165px;
     top: 15px;
     text-align: center;
 }
 
-a:hover {
-    font-size: 1.05em;
-}
-
-#content {
+body > div#container > div#content {
     width: 60%;
-    height: 25%;
+    height: 45%;
     top: 55px;
     margin: 0 auto;
     background-color: powderblue;
@@ -90,7 +98,7 @@ a:hover {
     border-radius: 1em;
 }
 
-.photo {
+body > div#container > div#content > a > img.photo {
     display: flex;
     position: absolute;
     width: 100%;
@@ -98,15 +106,15 @@ a:hover {
     border-radius: 1em;
 }
 
-#img1 {
+body > div#container > div#content > a > img#img1 {
     animation: img1 13s infinite;
 }
 
-#img2 {
+body > div#container > div#content > a > img#img2 {
     animation: img2 13s infinite;
 }
 
-#img3 {
+body > div#container > div#content > a > img#img3 {
     animation: img3 13s infinite;
 }
 
@@ -183,7 +191,7 @@ a:hover {
     }
 }
 
-#menutitle {
+body > div#container > div#menutitle {
     box-sizing: border-box;
     width: 60%;
     top: 70px;
@@ -252,9 +260,10 @@ footer {
 
 
 @media screen and (min-width: 768px) {/*테블릿화면*/
-    #header {
+    body > div#container > div#header {
         width: 80%;
     }
+
     #nav {
         display: flex;
         flex-wrap: nowrap;
@@ -268,7 +277,8 @@ footer {
         background: none;
         border: none;
     }
-    #content{
+
+    body > div#container > div#content{
         width: 80%;
         height: 60%;
         margin-bottom: 30px;
@@ -300,6 +310,7 @@ footer {
         margin-bottom: 0;
         background-color: white;
     }
+
     .menup > img {
         width: 40%;
         opacity: 0.6;
@@ -332,15 +343,16 @@ footer {
     .menu {
         color: rgb(146, 143, 143);
     }
+
 }
 
 
 @media screen and (min-width: 1024px) {
 /*pc화면*/
-    #header {
+    body > div#container > div#header {
         width: 60%;
     }
-    #content {
+    body > div#container > div#content {
         width: 60%;
         height: 70%;
         border-radius: 2em;

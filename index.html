@@ -6,35 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지</title>
     <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./Script/index.js"/>
 </head>
 <script>
-'use strict'
-const date = new Date();
 
-let timeId = null;
-
-function printTime(){
-    const date = new Date();
-    const hh = date.getHours();
-    const mm = date.getMinutes();
-    const ss = date.getSeconds();
-
-    document.getElementById("result").innerHTML = hh + " : " + mm + " : " + ss;
-}
-
-
-function startClock() {
-    timeId = setInterval(printTime,1000);
-    si = null;
-}
-
-
-function stopClock(){
-    clearInterval(timeId);
-    clearInterval(si);
-}
-
-const si = setInterval(printTime,0);
 </script>
 <body>
     <div id="container">
